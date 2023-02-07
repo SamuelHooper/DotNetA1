@@ -122,7 +122,7 @@
 
                     sw.Close();
                 }
-                else if (!File.Exists(ticketFile)) // Gives error message if option 1 is picked with no avalible file
+                else if (menuOption == "1" && !File.Exists(ticketFile)) // Gives error message if option 1 is picked with no avalible file
                 {
                     Console.WriteLine("File does not exist");
                 }
